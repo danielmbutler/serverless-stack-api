@@ -107,3 +107,31 @@ Tests:       3 passed, 3 total
 Snapshots:   0 total
 Time:        6.038s
 Ran all test suites. #>
+
+mkdir resources
+
+serverless deploy
+
+<#
+Serverless: Stack update finished...
+Service Information
+service: notes-api
+stage: prod
+region: us-east-1
+stack: notes-api-prod
+resources: 43
+api keys:
+  None
+endpoints:
+
+functions:
+  create: notes-api-prod-create
+  get: notes-api-prod-get
+  list: notes-api-prod-list
+  update: notes-api-prod-update
+  delete: notes-api-prod-delete
+  billing: notes-api-prod-billing
+layers:
+  None
+Serverless: Run the "serverless" command to setup monitoring, troubleshooting and testing.
+#>
